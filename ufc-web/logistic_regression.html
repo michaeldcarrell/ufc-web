@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="icon" href="resources/img/CE-Logo.png">
+    <meta charset="UTF-8">
+    <title>Hour Entry</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">UFC Fight Prediction</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Reporting</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="logistic_regression.html">Add Hours</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Add Hour Types</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container-fluid form-container">
+    <div class="row">
+        <div class="form-group col-3">
+            <label for="hour_type_drop_down" class="form-text text-muted">Type</label>
+            <select class="form-unit hour-type-input form-control" id="hour_type_drop_down">
+                <option>Average Strikes</option>
+                <option>Average Strikes Thrown</option>
+            </select>
+        </div>
+
+        <div class="form-group col-3">
+            <label for="red-fighter-x" class="form-text text-muted">Red Fighter</label>
+            <input type="number" class="form-unit form-control hours-gained-input" id="red-fighter-x">
+        </div>
+        <div class="form-group col-3">
+            <label for="blue-fighter-x" class="form-text text-muted">Blue Fighter</label>
+            <input type="number" class="form-unit form-control hours-gained-input" id="blue-fighter-x">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-9">
+            <button type="submit" class="btn btn-dark submit-add-row" id="submit-add-row">Add New Row</button>
+        </div>
+    </div>
+</div>
+</body>
+<script src="resources/js/lg-reg.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
